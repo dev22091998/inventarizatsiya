@@ -1,0 +1,103 @@
+.home {
+  background-color: #fff;
+  background-image: url('../../assets/bg4.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh; // To'liq ekranni qamrab oladi
+
+  min-height: 100vh;
+  width: 100%;
+
+  & nav {
+    // background-color: #181818;
+    // background-color: #F3F3F3;
+    padding: 10px 20px;
+    // padding-top: 1.5rem;
+    // padding-bottom: 1.5rem;
+    // background: #030b6b;
+    // color: #fff;
+    .navbar-container {
+      width: 95%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .navbar-logo .logo {
+        width: 250px; /* Logotipning kengligi */
+        height: auto;
+        cursor: pointer;
+      }
+    }
+    // & > .logo {
+    //   color: #fff;
+    // }
+  }
+}
+.inventory-info {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.home-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  & li a {
+    color: #fff;
+    size: 35px;
+  }
+  & > * {
+    margin-left: 1rem;
+    color: #fff;
+  }
+}
+
+.hero {
+  width: 95%;
+  margin: 0 auto;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+}
+
+.hero-text {
+  width: 50%;
+  & > * {
+    color: #fff;
+    margin-bottom: 2rem;
+  }
+  & > h2 span {
+    display: block;
+  }
+  & .hero-buttons a {
+    color: #fff;
+  }
+}
+.hero-image {
+  width: 50%;
+}
+@media screen and (max-width: 600px) {
+  .hero {
+    flex-direction: column;
+  }
+
+  .hero-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+  }
+  .hero-image {
+    width: 100%;
+    &img {
+      width: 100%;
+    }
+  }
+}
